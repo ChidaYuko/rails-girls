@@ -14,6 +14,7 @@ group :production do
 end
 #Use Devise as authentication
 gem 'devise'
+gem 'gravtastic'
 #Use CarrierWave as the uploader
 gem 'carrierwave'
 gem 'mini_magick', '4.8.0'
