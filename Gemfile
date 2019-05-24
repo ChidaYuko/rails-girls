@@ -12,8 +12,11 @@ end
 group :production do
   gem 'pg'
 end
+#Use Devise as authentication
+gem 'devise'
 #Use CarrierWave as the uploader
 gem 'carrierwave'
+gem 'mini_magick', '4.8.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
