@@ -26,6 +26,11 @@
     <%= form.file_field :picture %>
   </div>
 
+  <div class="field">
+    <%= form.label :evaluation %>
+    <%= form.select :evaluation, [["★", "0"], ["★★", "1"], ["★★★", "2"]] %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
