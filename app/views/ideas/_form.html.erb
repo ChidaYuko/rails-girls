@@ -11,27 +11,41 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
+  <div class="row flex formMargin">
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
-  </div>
+    <div class="col-md-2 formMargin">
+      <%= form.label :name %>
+    </div>
+    <div class="col-md-10 formMargin">
+      <%= form.text_field :name %>
+    </div>
 
-  <div class="field">
-    <%= form.label :picture %>
-    <%= form.file_field :picture %>
-  </div>
+    <div class="col-md-2 formMargin">
+      <%= form.label :description %>
+    </div>
+    <div class="col-md-10 formMargin">
+      <%= form.text_area :description %>
+    </div>
 
-  <div class="field">
-    <%= form.label :evaluation %>
-    <%= form.select :evaluation, [["★", "0"], ["★★", "1"], ["★★★", "2"]] %>
-  </div>
+    <div class="col-md-2 formMargin">
+      <%= form.label :picture %>
+    </div>
+    <div class="col-md-10 formMargin">
+      <%= form.file_field :picture %>
+    </div>
 
-  <div class="actions">
-    <%= form.submit %>
+    <div class="col-md-2 formMargin">
+      <%= form.label :evaluation %>
+    </div>
+    <div class="col-md-10 formMargin">
+      <%= form.select :evaluation, @showEvaluation %>
+    </div>
+
+    <div class="col-md-12 formMargin">
+     <div class="actions">
+        <%= form.submit %>
+      </div>
+    </div>
+
   </div>
 <% end %>
